@@ -1,0 +1,101 @@
+/* ==========================
+   CALENDÁRIO
+   Usado em: pages/calendario.html
+========================== */
+
+.calendar {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg);
+  max-width: 440px;
+  margin: 0 auto var(--space-xl);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.calendar-nav-btn {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-offwhite);
+  color: var(--color-black);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+.calendar-nav-btn:hover { background: var(--color-gold); color: var(--color-black); }
+.calendar-nav-btn svg { width: 18px; height: 18px; }
+
+.calendar-month-label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: var(--space-xs);
+}
+.calendar-weekdays span {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-gray);
+  text-transform: uppercase;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-cell {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--color-black);
+  transition: background var(--transition-fast);
+}
+.calendar-cell:not(.calendar-cell--empty):hover { background: var(--color-offwhite); }
+.calendar-cell--empty { visibility: hidden; pointer-events: none; }
+
+.calendar-cell.is-today .calendar-cell__number {
+  color: var(--color-gold);
+  font-weight: 700;
+}
+.calendar-cell.has-events { font-weight: 600; }
+
+.calendar-cell__dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  margin-top: 2px;
+}
+
+.calendar-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  font-size: 0.8rem;
+  color: var(--color-gray);
+}
+.calendar-legend__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+}

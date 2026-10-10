@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PJAG — Pastoral Jovem Anjo da Guarda</title>
+<meta name="description" content="Pastoral Jovem Anjo da Guarda (PJAG) — uma juventude que vive a fé, compartilha a vida e caminha com Cristo. Conheça nossos eventos, história e como participar.">
+<meta name="theme-color" content="#0b0b0c">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PJAG — Pastoral Jovem Anjo da Guarda">
+<meta property="og:description" content="Uma juventude que vive a fé, compartilha a vida e caminha com Cristo.">
+<!-- <meta property="og:image" content="assets/images/og-image.jpg"> -->
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0b0c'/%3E%3Ctext x='50' y='62' font-size='42' fill='%23c8a24a' text-anchor='middle' font-family='Arial' font-weight='bold'%3EP%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+<header class="header" id="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo" aria-label="PJAG - Página inicial">
+      <span class="logo__text">PJAG</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link nav__link--active">Início</a></li>
+        <li><a href="pages/sobre.html" class="nav__link">Sobre</a></li>
+        <li><a href="pages/eventos.html" class="nav__link">Eventos</a></li>
+        <li><a href="pages/calendario.html" class="nav__link">Calendário</a></li>
+        <li><a href="pages/galeria.html" class="nav__link">Galeria</a></li>
+        <li><a href="pages/noticias.html" class="nav__link">Notícias</a></li>
+        <li><a href="pages/contato.html" class="nav__link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a href="pages/participar.html" class="btn btn--gold header__cta">Quero participar</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Início</a></li>
+      <li><a href="pages/sobre.html" class="mobile-menu__link">Sobre</a></li>
+      <li><a href="pages/eventos.html" class="mobile-menu__link">Eventos</a></li>
+      <li><a href="pages/calendario.html" class="mobile-menu__link">Calendário</a></li>
+      <li><a href="pages/galeria.html" class="mobile-menu__link">Galeria</a></li>
+      <li><a href="pages/noticias.html" class="mobile-menu__link">Notícias</a></li>
+      <li><a href="pages/contato.html" class="mobile-menu__link">Contato</a></li>
+    </ul>
+    <a href="pages/participar.html" class="btn btn--gold mobile-menu__cta">Quero participar</a>
+  </div>
+  <div class="mobile-menu__overlay" id="mobileMenuOverlay"></div>
+</header>
+
+<main id="conteudo-principal">
+
+  <section class="hero" id="inicio">
+    <div class="hero__media">
+      <div class="hero__placeholder" role="img" aria-label="Foto dos jovens da PJAG">
+        [ADICIONE AQUI A FOTO/VÍDEO DA PJAG]
+      </div>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container hero__content reveal">
+      <span class="hero__eyebrow">Pastoral Jovem</span>
+      <h1 class="hero__title">PASTORAL JOVEM<br>ANJO DA GUARDA</h1>
+      <p class="hero__subtitle">Uma juventude que vive a fé, compartilha a vida e caminha com Cristo.</p>
+      <div class="hero__actions">
+        <a href="#quem-somos" class="btn btn--gold">Conheça a PJAG</a>
+        <a href="#eventos" class="btn btn--outline">Próximos eventos</a>
+      </div>
+    </div>
+
+    <a href="#quem-somos" class="hero__scroll" aria-label="Rolar para a próxima seção">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section" id="quem-somos">
+    <div class="container">
+      <span class="section__eyebrow reveal">Quem somos</span>
+      <h2 class="section__title reveal">Jovens que caminham juntos na fé</h2>
+      <p class="section__text reveal">
+        A Pastoral Jovem Anjo da Guarda (PJAG) é formada por jovens da
+        <strong>[NOME DA PARÓQUIA]</strong>, em [CIDADE] – [ESTADO], que se
+        reúnem para viver a fé em comunidade, servir ao próximo e crescer
+        juntos no caminho com Jesus Cristo.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Missão</h3>
+          <p class="feature-card__text">Evangelizar e formar jovens discípulos missionários de Cristo.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.5C.8 9.5 2 6 5.5 6c2 0 3.3 1.2 4 2.3C10.2 7.2 11.5 6 13.5 6 17 6 18.2 9.5 16 12.5 13.5 16.65 12 21 12 21z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Comunidade</h3>
+          <p class="feature-card__text">Um espaço de acolhida, amizade e pertencimento para todos os jovens.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v18M7 7.5h10"/></svg>
+          </div>
+          <h3 class="feature-card__title">Espiritualidade</h3>
+          <p class="feature-card__text">Vivência da fé através da oração, dos sacramentos e do serviço.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="eventos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow reveal">Agenda</span>
+        <h2 class="section__title reveal">Próximos eventos</h2>
+        <p class="section__text reveal">Fique por dentro dos encontros, retiros e celebrações da nossa pastoral.</p>
+      </div>
+
+      <div class="events-grid" id="eventsGrid"></div>
+
+      <div class="section__footer">
+        <a href="pages/eventos.html" class="btn btn--outline btn--dark">Ver todos os eventos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section history" id="historia">
+    <div class="container history__grid">
+      <div class="history__image reveal">
+        <div class="hero__placeholder">[FOTO HISTÓRICA DA PJAG]</div>
+      </div>
+      <div class="reveal">
+        <span class="section__eyebrow">Nossa história</span>
+        <h2 class="section__title">Uma caminhada de fé e juventude</h2>
+        <p class="history__text">
+          Desde sua fundação, a PJAG tem sido um lugar de encontro entre
+          jovens que desejam viver o Evangelho de forma concreta, alegre e
+          comunitária. Nossa trajetória é marcada por retiros, missões e
+          amizades que atravessam gerações.
+        </p>
+        <a href="pages/sobre.html#historia" class="btn btn--gold">Conheça nossa trajetória</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow reveal">Momentos da PJAG</span>
+        <h2 class="section__title reveal">Vivências que marcam</h2>
+        <p class="section__text reveal">Um pouco do que vivemos em nossos encontros, retiros e missões.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+
+      <div class="section__footer">
+        <a href="pages/galeria.html" class="btn btn--outline btn--dark">Ver galeria completa</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="avisos">
+    <div class="container">
+      <span class="section__eyebrow reveal">Avisos</span>
+      <h2 class="section__title reveal">Comunicados da pastoral</h2>
+
+      <div class="notices-grid">
+        <article class="notice-card reveal">
+          <span class="notice-card__date">[DATA]</span>
+          <div>
+            <h3 class="notice-card__title">[TÍTULO DO AVISO]</h3>
+            <p class="notice-card__text">[Descrição breve do aviso ou comunicado para os jovens da pastoral.]</p>
+          </div>
+        </article>
+        <article class="notice-card reveal">
+          <span class="notice-card__date">[DATA]</span>
+          <div>
+            <h3 class="notice-card__title">[TÍTULO DO AVISO]</h3>
+            <p class="notice-card__text">[Descrição breve do aviso ou comunicado para os jovens da pastoral.]</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section spirituality" id="espiritualidade">
+    <div class="container">
+      <span class="section__eyebrow reveal">Espiritualidade</span>
+      <p class="spirituality__quote reveal">
+        "Não tenhais medo de ser os santos do novo milênio." — São João Paulo II
+      </p>
+      <p class="spirituality__patron reveal">
+        Sob a proteção do nosso padroeiro, <strong>[PADROEIRO]</strong>,
+        vivemos nossa fé com alegria e perseverança.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="participar">
+    <div class="container" style="text-align:center;">
+      <span class="section__eyebrow reveal">Como participar</span>
+      <h2 class="section__title reveal">Quer caminhar com a gente?</h2>
+      <p class="section__text reveal" style="margin-left:auto;margin-right:auto;">
+        Participar da PJAG é simples. Basta dar o primeiro passo!
+      </p>
+
+      <div class="participate__steps">
+        <div class="step-card reveal">
+          <span class="step-card__number">1</span>
+          <h3 class="feature-card__title">Venha nos conhecer</h3>
+          <p class="feature-card__text">Participe de um encontro presencial e conheça nossa comunidade.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-card__number">2</span>
+          <h3 class="feature-card__title">Fale conosco</h3>
+          <p class="feature-card__text">Entre em contato pelo WhatsApp ou Instagram da pastoral.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-card__number">3</span>
+          <h3 class="feature-card__title">Faça parte</h3>
+          <p class="feature-card__text">Junte-se aos nossos encontros semanais e viva essa caminhada.</p>
+        </div>
+      </div>
+
+      <a href="pages/participar.html" class="btn btn--gold reveal">Quero fazer parte</a>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="redes-sociais">
+    <div class="container" style="text-align:center;">
+      <span class="section__eyebrow reveal">Conecte-se</span>
+      <h2 class="section__title reveal">Siga a PJAG nas redes sociais</h2>
+
+      <div class="social-grid">
+        <a href="https://instagram.com/[INSTAGRAM]" target="_blank" rel="noopener" class="social-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener" class="social-card reveal">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3.1.7-.2 1l-2.2 2.3z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://youtube.com/[YOUTUBE]" target="_blank" rel="noopener" class="social-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg>
+          <span>YouTube</span>
+        </a>
+        <a href="https://tiktok.com/[TIKTOK]" target="_blank" rel="noopener" class="social-card reveal">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3c.3 2 1.8 3.5 3.8 3.8v2.6c-1.4 0-2.7-.4-3.8-1.1v6.2c0 3-2.4 5.5-5.4 5.5S3.2 17.5 3.2 14.5c0-2.8 2.1-5.1 4.8-5.4v2.7c-1.2.3-2.1 1.4-2.1 2.7 0 1.5 1.3 2.8 2.8 2.8s2.8-1.3 2.8-2.8V3H14z"/></svg>
+          <span>TikTok</span>
+        </a>
+        <a href="https://facebook.com/[FACEBOOK]" target="_blank" rel="noopener" class="social-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M13.5 9H15V6.5h-1.8c-1.7 0-2.7 1-2.7 2.8V11H9v2.5h1.5V18h2.5v-4.5h1.8l.3-2.5h-2.1V9.4c0-.5.2-.4.5-.4z" fill="currentColor" stroke="none"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-final">
+    <div class="container">
+      <h2 class="cta-final__title reveal">Vem caminhar com a PJAG!</h2>
+      <p class="cta-final__text reveal">
+        A juventude da Igreja precisa de você. Dê o primeiro passo hoje mesmo.
+      </p>
+      <a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener" class="btn btn--gold reveal">Falar no WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox__content">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Imagem anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <div class="lightbox__placeholder">[FOTO AMPLIADA]</div>
+    <p id="lightboxCaption"></p>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Próxima imagem">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="logo__text">PJAG</span>
+        <p class="footer__tagline">Pastoral Jovem Anjo da Guarda — uma juventude que vive a fé, compartilha a vida e caminha com Cristo.</p>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Links rápidos</h3>
+        <nav class="footer__links">
+          <a href="pages/sobre.html">Sobre</a>
+          <a href="pages/eventos.html">Eventos</a>
+          <a href="pages/calendario.html">Calendário</a>
+          <a href="pages/galeria.html">Galeria</a>
+          <a href="pages/noticias.html">Notícias</a>
+          <a href="pages/contato.html">Contato</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer__heading">Redes sociais</h3>
+        <div class="footer__social">
+          <a href="https://instagram.com/[INSTAGRAM]" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+          </a>
+          <a href="https://wa.me/[WHATSAPP]" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3.1.7-.2 1l-2.2 2.3z"/></svg>
+          </a>
+          <a href="https://youtube.com/[YOUTUBE]" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <h3 class="footer__heading">Contato</h3>
+        <span>[NOME DA PARÓQUIA]</span>
+        <span>[ENDEREÇO] — [CIDADE]/[ESTADO]</span>
+        <span>[EMAIL]</span>
+        <span>[WHATSAPP]</span>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>"Ide e fazei discípulos de todas as nações." — Mt 28,19</p>
+      <p>&copy; <span id="currentYear"></span> Pastoral Jovem Anjo da Guarda — PJAG. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/events.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* ==========================
+   RESET & BASE
+========================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* ==========================
+   ACESSIBILIDADE
+========================== */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-sm);
+  background: var(--color-gold);
+  color: var(--color-black);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  z-index: 2000;
+  font-weight: 600;
+  transition: top var(--transition-fast);
+}
+.skip-link:focus { top: var(--space-sm); }
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.no-scroll { overflow: hidden; }
+
+/* ==========================
+   BOTÕES
+========================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 0.9rem 1.8rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn--gold {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+.btn--gold:hover { background: var(--color-gold-light); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+.btn--outline:hover { background: var(--color-white); color: var(--color-black); transform: translateY(-2px); }
+
+.btn--outline.btn--dark {
+  color: var(--color-black);
+  border-color: var(--color-black);
+}
+.btn--outline.btn--dark:hover { background: var(--color-black); color: var(--color-white); }
+
+/* ==========================
+   UTILITÁRIOS DE SEÇÃO
+========================== */
+.section { padding: var(--space-2xl) 0; }
+.section--alt { background: var(--color-offwhite); }
+
+.section__eyebrow {
+  display: inline-block;
+  color: var(--color-gold);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: var(--space-xs);
+}
+.section__title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: var(--space-sm);
+}
+.section__text {
+  max-width: 680px;
+  color: var(--color-gray);
+  font-size: 1.05rem;
+  margin-bottom: var(--space-lg);
+}
+.section__header { margin-bottom: var(--space-lg); }
+.section__footer { margin-top: var(--space-lg); text-align: center; }
